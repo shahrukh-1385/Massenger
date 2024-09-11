@@ -1,0 +1,8 @@
+.container {
+   /* background-color: Red; */
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 97vh;
+   justify-content: center;
+}
