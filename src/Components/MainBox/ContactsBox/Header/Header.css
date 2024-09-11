@@ -1,0 +1,111 @@
+.header{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   height: 12vh;
+}
+.search{
+   display: flex;
+   align-items: center;
+   padding: 10px;
+   gap: 10px;
+   background-color: rgba(201, 201, 201, 0.26);
+   border-radius: 12px;
+}
+.search-bar{
+   flex: 1;
+   display: flex;
+   align-items: center;
+   border-radius: 10px;
+   gap: 10px;
+}
+.search-bar input {
+   background-color: transparent;
+   outline: none;
+   border: none;
+   color: #9aa2ab;
+}
+.search-bar input::placeholder{
+   font-family: vazirmatn400;
+}
+.fa-magnifying-glass{
+   color: #9aa2ab;
+   cursor: pointer;
+}
+.add{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(201, 201, 201, 0.26);
+   color: #878e96;
+   font-size: 18px;
+   width: 33px;
+   height: 33px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.popup {
+   background-color: #fff;
+   position: absolute;
+   width: 30%;
+   height: 50%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   z-index: 1;
+   border-radius: 10px;
+}
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.1);
+   z-index: 0;
+   backdrop-filter: blur(2px);
+   border-radius: 10px;
+}
+.fa-xmark{
+   color: red;
+   font-size: 30px;
+   margin-left: auto;
+   cursor: pointer;
+}
+.register{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.inputs{
+   display: flex;
+   flex-direction: column;
+   margin: 10px;
+}
+#input-name, #input-number{
+   direction: rtl;
+   padding: 3px;
+   background-color: rgba(201, 201, 201, 0.26);
+   font-size: 18px;
+   margin: 5px;
+   border: 1px solid rgba(201, 201, 201, 0.26);
+   outline: none;
+   border-radius: 10px;
+   font-family: vazirmatn400;
+}
+.submit-add{
+   width: 80%;
+   height: 30px;
+   font-family: vazirmatn500;
+   background-color: rgba(185, 185, 185, 0.26);
+   border: 1px solid rgba(185, 185, 185, 0.26);
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+
+
+
