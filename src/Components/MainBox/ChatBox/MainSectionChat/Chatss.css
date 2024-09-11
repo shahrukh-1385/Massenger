@@ -1,0 +1,214 @@
+.Chat-section {
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   height: 100%;
+   margin-left: 16px;
+}
+.chat-info {
+   background-color: #fff;
+   width: 100%;
+   height: 9%;
+   border-radius: 14px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+   0 2px 4px rgba(0, 0, 0, 0.07),
+   0 4px 8px rgba(0, 0, 0, 0.07),
+   0 8px 16px rgba(0, 0, 0, 0.07),
+   0 16px 32px rgba(0, 0, 0, 0.07),
+   0 32px 64px rgba(0, 0, 0, 0.07);
+}
+.user-chat{
+   width: 40%;
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.chat-person {
+   width: 100%;
+   height: 83%;
+}
+.sand-message {
+   background-color: #fff;
+   width: 100%;
+   height: 8%;
+   border-radius: 14px;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   margin-top: auto;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+   0 2px 4px rgba(0, 0, 0, 0.07),
+   0 4px 8px rgba(0, 0, 0, 0.07),
+   0 8px 16px rgba(0, 0, 0, 0.07),
+   0 16px 32px rgba(0, 0, 0, 0.07),
+   0 32px 64px rgba(0, 0, 0, 0.07);
+}
+.blocked{
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   color: #8b98a8;
+}
+.user-avatar {
+   width: 11%;
+   height: 70%;
+   border-radius: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: vazirmatn500;
+   margin-left: 20px;
+}
+
+.information {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-left: 20px;
+}
+
+.user-name {
+   margin-right: auto;
+   font-size: 18px;
+   color: #555e66;
+}
+
+.user-number {
+   font-size: 14px;
+   font-family: vazirmatn700;
+   color: #9299a1;
+}
+.block-user{
+   background-color: red;
+   width: 9%;
+   font-family: vazirmatn500;
+   height: 70%;
+   border-radius: 10px;
+   border: none;
+   cursor: pointer;
+   margin-right: 10px;
+   color: #fff;
+}
+.block-user:hover{
+border: 2px solid red;
+background-color: rgba(255, 0, 0, 0.459);
+color: #00000079;
+}
+.icon-attach {
+   font-size: 24px;
+   padding: 10px;
+   margin-right: 10px;
+   color: #9aa2ab;
+   cursor: pointer;
+}
+
+.text-input {
+   width: 78%;
+   height: 90%;
+   font-size: 15px;
+   margin-right: 10px;
+   font-family: vazirmatn400;
+   direction: rtl;
+   caret-color: #555e66;
+   border: none;
+}
+.text-input:focus {
+   outline: none;
+   border: none;
+}
+
+.text-input::placeholder {
+   color: #9aa2ab;
+}
+
+.fa-paper-plane{
+   font-size: 24px;
+   padding: 10px;
+   margin-right: 10px;
+   color: #4d89ce;
+   cursor: pointer;
+}
+.fa-face-laugh-beam{
+   font-size: 24px;
+   padding: 10px;
+   margin-right: 10px;
+   color: #9aa2ab;
+   cursor: pointer;
+   margin: 0px 10px;
+}
+.emoji{
+   position: relative;
+}
+.picker{
+   position: absolute;
+   left: 40px;
+   bottom: 100%;
+}
+.chat-persons{
+   overflow-y: auto;
+   overflow-x: hidden;
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   gap: 20px;
+   height: 83%;
+}
+.chat-persons::-webkit-scrollbar {
+   width: 5px;
+   cursor: grab;
+}
+.chat-persons::-webkit-scrollbar-thumb {
+   background-color: #4a84db9d;
+   border-radius: 10px;
+}
+.chat-persons::-webkit-scrollbar-thumb:hover {
+   background-color: #4a84db;
+   cursor: grab;
+}
+.chat-persons::-webkit-scrollbar-track {
+   background: none;
+}
+.MSG{
+   max-width: 60%;
+   display: flex;
+   gap: 20px;
+   direction: rtl;
+   font-size: 15px;
+}
+.sand{
+   align-self: flex-end;
+   display: flex;
+}
+.msg-container{
+   gap: 0px;
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+}
+.Sender{
+   background-color: #ffffffaf;
+}
+.text{
+   padding: 20px;
+   border-radius: 10px;
+   font-family: vazirmatn400;
+}
+.sand-time{
+   margin-right: auto;
+}
+.avatar-chat{
+   background-color: aqua;
+   width: 50px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 40px;
+   position: relative;
+   inset: 59% 0 0 0;
+}
