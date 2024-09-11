@@ -1,0 +1,31 @@
+.register{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.inputs{
+   display: flex;
+   flex-direction: column;
+   margin: 10px;
+}
+#input-name, #input-number{
+   direction: rtl;
+   padding: 3px;
+   background-color: rgba(201, 201, 201, 0.26);
+   font-size: 18px;
+   margin: 5px;
+   border: 1px solid rgba(201, 201, 201, 0.26);
+   outline: none;
+   border-radius: 10px;
+   font-family: vazirmatn400;
+}
+.submit-add{
+   width: 80%;
+   height: 30px;
+   font-family: vazirmatn500;
+   background-color: rgba(185, 185, 185, 0.26);
+   border: 1px solid rgba(185, 185, 185, 0.26);
+   border-radius: 10px;
+   cursor: pointer;
+}
+
