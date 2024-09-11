@@ -1,0 +1,31 @@
+.MSG{
+   max-width: 60%;
+   display: flex;
+   gap: 20px;
+   direction: rtl;
+   font-size: 15px;
+}
+.sand{
+   align-self: flex-end;
+   display: flex;
+}
+.recipient {
+   background-color: #7dff8e9d;
+}
+.msg-container{
+   gap: 0px;
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+}
+.Sender{
+   background-color: #ffffffaf;
+}
+.text{
+   padding: 20px;
+   border-radius: 10px;
+   font-family: vazirmatn400;
+}
+.sand-time{
+   margin-right: auto;
+}
