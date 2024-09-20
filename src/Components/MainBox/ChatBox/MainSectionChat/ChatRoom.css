@@ -128,7 +128,8 @@
    flex-direction: column;
    gap: 20px;
 }
-.Massages{
+
+.Messages{
    max-width: 100%;
    display: flex;
    gap: 20px;
@@ -137,7 +138,7 @@
    align-self: flex-end;
 
 }
-.avetar-show{
+.avatar-show{
    width: 37px;
    height: 37px;
    border-radius: 50%;
@@ -155,15 +156,14 @@
 }
 .texts p {
    padding: 20px;
-
    color: #eeeeee;
 }
-.riciver-massege{
+.receiver-message{
    background-color: #5183fe;
    border-radius: 10px;
    border-bottom-left-radius: 0px;
 }
-.sander-massege{
+.sender-message{
    background-color: #32bb44;
    border-radius: 10px;
    border-bottom-right-radius: 0px;
@@ -174,61 +174,27 @@ span{
 .time-left{
    align-self: flex-end;
 }
-/* .MSG {
-   width: 100%;
+.container-no-messages {
    display: flex;
-   gap: 20px;
-   direction: ltr;
-   font-size: 16px;
-   color: #eeeeee;
+   align-items: center;
+   justify-content: center;
+   height: 85%;
 }
-
-.msg-container {
-   gap: 0px;
+.no-messages{
    display: flex;
-   flex-direction: column;
-   width: 20%;
-   max-width: 50%;
+   align-items: center;
+   justify-content: center;
+   width: 20vh;
+   height: 30px;
+   background-color: #5e5e5e34;
+   border-radius: 15px;
+
 }
-
-.sand {
-   align-self: flex-end;
-   display: flex;
+.text-no-messages{
+   color: #fff;
+   font-size: 20px;
 }
-
-.receive {
-   align-self: flex-start;
-   display: flex;
-}
-
-.text {
-   padding: 20px;
-   border-radius: 10px;
-   font-family: vazirmatn400;
-   direction: rtl;
-}
-
-.Receiver {
-   background-color: #588fe29d;
-   align-self: flex-start;
-   display: flex;
-}
-
-.Sender {
-   background-color: #54c05daf;
-   align-self: flex-end;
-   display: flex;
-}
-
-.time-text {
-   color: #3b3b3b;
-   font-size: 19px;
-   direction: rtl;
-} */
-
 /* sand section */
-
-
 .sand-message {
    background-color: #fff;
    width: 100%;
@@ -307,3 +273,58 @@ span{
    cursor: pointer;
    color: #8b98a8;
 }
+
+
+
+
+.context-menu {
+   position: absolute;
+   background-color: white;
+   border: 1px solid #ccc;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+   z-index: 1000;
+   border-radius: 6px;
+   width: 100px;
+}
+
+.context-menu button {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   border: none;
+   background: none;
+   cursor: pointer;
+   text-align: left;
+   font-family: vazirmatn400;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 15px;
+}
+.Delete:hover{
+   border-top-left-radius: 6px;
+   border-top-right-radius: 6px;
+   background-color: rgba(255, 0, 0, 0.815);
+   color: #ffffff;
+   transition:all .5s;
+}
+.fa-trash{
+   color: rgb(255, 0, 0);
+}
+.Edit:hover{
+   border-bottom-left-radius: 6px;
+   border-bottom-right-radius: 6px;
+   background-color: rgba(255, 166, 0, 0.89);
+   color: #ffffff;
+   transition:all .5s;
+}
+.fa-pen{
+   color:orange;
+}
+
+
+
+
+
+
+
