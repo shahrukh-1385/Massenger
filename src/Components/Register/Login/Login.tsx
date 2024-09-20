@@ -11,7 +11,7 @@ export default function Login({ Login, setUserStatus, getToken }: any) {
    const [data, setData] = useState<any>(null);
    const [token, setToken] = useState<string | null>(null);
 
-   // 
+   // validation values
    const validateInputs = () => {
       const newErrors = { password: '', username: '' };
       if (password.length < 8) newErrors.password = 'رمز شما باید حداقل 8 کاراکتر باشد';
@@ -20,7 +20,7 @@ export default function Login({ Login, setUserStatus, getToken }: any) {
       return !newErrors.password && !newErrors.username;
    };
 
-   // تابع برای ورود کاربر
+   // user verify
    const verifyUser = async () => {
       try {
          const response = await fetch('https://farawin.iran.liara.run/api/user/login', {
@@ -44,7 +44,7 @@ export default function Login({ Login, setUserStatus, getToken }: any) {
          });
          console.error(err);
       } finally {
-         setLoading(false); // وضعیت بارگذاری را در هر صورت به false برمی‌گردانیم
+         setLoading(false);
       }
    };
 
@@ -60,7 +60,7 @@ export default function Login({ Login, setUserStatus, getToken }: any) {
       await verifyUser();
    }
 
-   // استفاده از useEffect برای به‌روزرسانی توکن
+   // get token
    useEffect(() => {
       if (data && data.token) {
          setToken(data.token);
@@ -70,7 +70,7 @@ export default function Login({ Login, setUserStatus, getToken }: any) {
       }
    }, [data]);
 
-   // عناصر کامپوننت
+   // element
    return (
       <div className="overlay">
          <div className='LoginPage'>
