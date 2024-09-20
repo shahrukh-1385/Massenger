@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import Contacts from "../MainBox/ContactsBox/MainSectionContacts/Contacts";
 import ChatRoom from "../MainBox/ChatBox/MainSectionChat/ChatRoom";
@@ -17,7 +17,6 @@ const App:any = () => {
     setShow(true);
     setCurrentContact(contact);
   };
-
   const handleLogin = (userData: any | null) => {
     setUser(userData);
   };
@@ -28,8 +27,8 @@ const App:any = () => {
     <div className='container'>
       {user ? (
         <>
-          <Contacts onContactClick={handleShowChats} />
-          <ChatRoom show={show} contact={currentContact} sender={user.username} token={token}/>
+          <Contacts onContactClick={handleShowChats} setUserStatus={setUserStatus} setUser={setUser}/>
+          <ChatRoom show={show} contact={currentContact} sender={user.username} token={token} />
         </>
       ) : (
         <Login Login={handleLogin} setUserStatus={setUserStatus} getToken={getToken}/>
@@ -37,5 +36,4 @@ const App:any = () => {
     </div>
   );
 }
-
 export default App;
